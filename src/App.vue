@@ -9,8 +9,11 @@ export default {
 
 <template>
 <app-header></app-header>
-<app-main></app-main>
-<app-footer></app-footer>
+<div class="container">
+  <app-main></app-main>
+  <app-footer></app-footer>
+
+</div>
 </template>
 
 <style lang="scss">
