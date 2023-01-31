@@ -121,3 +121,43 @@ const vehicles = [
       img: 'man2'
     },
   ];
+
+  //links 
+
+  const menu = [
+    {
+      id: '421',
+      link: "#",
+      description: "Home"
+    },
+    {
+      id: '43461',
+      link: "#",
+      description: "About us"
+    },
+    {
+      id: '43145',
+      link: "#",
+      description: "Vehicles"
+    },
+    {
+      id: '45475',
+      link: "#",
+      description: "Dealers"
+    },
+    {
+      id: '4547e56',
+      link: "#",
+      description: "Packages"
+    },
+    {
+      id: '453436e56',
+      link: "#",
+      description: "Blog"
+    },
+    {
+      id: '436e56',
+      link: "#",
+      description: "Contact"
+    },
+  ];
