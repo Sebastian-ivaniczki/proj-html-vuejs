@@ -45,15 +45,15 @@ export default {
          <img :class="{ 'active': index === currentIndex }" :src="currentImage(slide.img)" :alt="slide.description">
        </div>
         
+       <i @click="previousSlide" class="fas fa-chevron-left"></i>
+       <i  @click="nextSlide" class="fas fa-chevron-right"></i>
       </div>
-      <button @click="previousSlide">Previous</button>
-      <button @click="nextSlide">Next</button>
   </div>
 </template>
 
 <style scoped lang="scss">
 .slider-container{
-  img{
+   img{
 
     width: 100%;
     height:  675px;
@@ -64,5 +64,23 @@ export default {
     display: block;
   }
 }
+.slider{
+  position: relative;
+}
 
+.fas{
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  color: #fff;
+  text-shadow: 2px 2px #000000;
+}
+.fa-chevron-left{
+  top: 50%;
+  left: 0;
+}
+.fa-chevron-right{
+  top: 50%;
+  right: 0;
+}
 </style>
