@@ -88,3 +88,36 @@ const vehicles = [
       price: '32,000'
     },
   ];
+
+  //customers 
+
+  const customers = [
+    {
+      id: '423',
+      name: 'Adam',
+      surname: 'Pippo',
+      description: 'We are gallery vehicle dealer. Before we met this site, our sales were sluggish',
+      img: 'man1'
+    },
+    {
+      id: '425',
+      name: 'Cristian',
+      surname: 'Pip',
+      description: 'ONE of the quality websites I aply to rent a car. There are hundreds of different tols',
+      img: 'testimonial2-1'
+    },
+    {
+      id: '4325',
+      name: 'Robert1',
+      surname: 'Franco',
+      description: 'Iwas trying to sell my car. and Iput it here and sold it for more than I was worth',
+      img: 'man2'
+    },
+    {
+      id: '498545',
+      name: 'Elisabeth',
+      surname: 'Rossi',
+      description: 'A fast and reliable vehicle selling site. Rare quality website With hundred of model vhicles',
+      img: 'man2'
+    },
+  ];
