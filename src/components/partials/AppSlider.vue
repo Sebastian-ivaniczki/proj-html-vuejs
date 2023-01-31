@@ -33,7 +33,7 @@ export default {
         this.currentIndex++
       }
       
-    }
+    },
   }
 }
 
@@ -49,7 +49,7 @@ export default {
         <div class="description">
           <h1>Buy And Sell Your Car At Its Value</h1>
           <p>Find the right price and dealer.</p>
-            <base-button :buttonStyles="{ color: '#fff' }">Learn More <i class="fa-solid fa-arrow-right"></i></base-button>
+            <base-button  :buttonStyles="{ color: '#fff' }">Learn More <i class="fa-solid fa-arrow-right"></i></base-button>
         </div>
        <i @click="previousSlide" class="fas fa-chevron-left"></i>
        <i  @click="nextSlide" class="fas fa-chevron-right"></i>

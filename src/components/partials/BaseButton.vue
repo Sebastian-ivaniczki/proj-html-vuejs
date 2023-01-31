@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
- <button class="neutral-button" :style="buttonStyles">
+ <button class="neutral-button" :style="buttonStyles" >
     <slot></slot>
   </button>
 </template>
