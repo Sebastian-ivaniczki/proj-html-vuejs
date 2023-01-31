@@ -161,3 +161,25 @@
       description: "Contact"
     },
   ];
+
+  export const slides = [
+    {
+      id: "1",
+      img: "slider-autocar-5",
+      
+    },
+    {
+      id: "2",
+      img: "slider-autocar-6"
+    },
+    {
+      id: "3",
+      img: "news-autocar-1-300x180",
+      
+    },
+    {
+      id: "3",
+      img: "news-autocar-5-600x359",
+      
+    },
+  ]

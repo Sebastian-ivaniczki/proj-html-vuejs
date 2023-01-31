@@ -1,12 +1,13 @@
 <script>
-import { links } from './data/dataBase';
+import { links, slides } from './data/dataBase';
 import AppSlider from './partials/AppSlider.vue'
 export default {
   name: 'AppHeader',
   components: { AppSlider },
   data() {
     return {
-      links
+      links,
+      slides
     } 
   }
 }
@@ -47,7 +48,7 @@ export default {
       </div>
     </div>
   </header>
- <app-slider></app-slider>
+ <app-slider :slides="slides"></app-slider>
 </template>
 
 <style scoped lang="scss">
