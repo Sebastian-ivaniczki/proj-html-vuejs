@@ -1,6 +1,8 @@
 <script>
+import BaseButton from './BaseButton.vue'
 export default {
   name: 'AppSlider',
+  components: {BaseButton},
   props: {
     slides: {
       type: Array,
@@ -44,7 +46,11 @@ export default {
 
          <img :class="{ 'active': index === currentIndex }" :src="currentImage(slide.img)" :alt="slide.description">
        </div>
-        
+        <div class="description">
+          <h1>Buy And Sell Your Car At Its Value</h1>
+          <p>Find the right price and dealer.</p>
+            <base-button :buttonStyles="{ color: '#fff' }">Learn More <i class="fa-solid fa-arrow-right"></i></base-button>
+        </div>
        <i @click="previousSlide" class="fas fa-chevron-left"></i>
        <i  @click="nextSlide" class="fas fa-chevron-right"></i>
       </div>
@@ -67,9 +73,17 @@ export default {
 .slider{
   position: relative;
 }
+.description{
+  color: #fff;
+  position: absolute;
+  left: 142px;
+    top: 339px;
+    width: 329px;
+}
+
 
 .fas{
-  font-size: 40px;
+  font-size: 20px;
   cursor: pointer;
   position: absolute;
   color: #fff;
@@ -77,10 +91,10 @@ export default {
 }
 .fa-chevron-left{
   top: 50%;
-  left: 0;
+  left: 60px;
 }
 .fa-chevron-right{
   top: 50%;
-  right: 0;
+  right: 60px;
 }
 </style>
