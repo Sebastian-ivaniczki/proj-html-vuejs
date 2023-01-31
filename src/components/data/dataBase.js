@@ -1,4 +1,4 @@
-const vehicles = [
+ export const vehicles = [
     {
       id: "1",
       category: "Cabrio",
@@ -91,7 +91,7 @@ const vehicles = [
 
   //customers 
 
-  const customers = [
+  export const customers = [
     {
       id: '423',
       name: 'Adam',
@@ -124,7 +124,7 @@ const vehicles = [
 
   //links 
 
-  const menu = [
+  export const links = [
     {
       id: '421',
       link: "#",
