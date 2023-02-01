@@ -40,7 +40,7 @@ export default {
 </script>
 
 <template>
-   <div>
+    <div>
       <div class="slider">
        <div class="slider-container"  v-for="(slide, index) in slides" :key="slide.id">
 
@@ -54,7 +54,7 @@ export default {
        <i @click="previousSlide" class="fas fa-chevron-left"></i>
        <i  @click="nextSlide" class="fas fa-chevron-right"></i>
       </div>
-  </div>
+    </div>
 </template>
 
 <style scoped lang="scss">

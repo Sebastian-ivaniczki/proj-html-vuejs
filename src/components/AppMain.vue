@@ -1,6 +1,6 @@
 <script>
 import Filter from './partials/Filter.vue';
-import Cards from './partials/Cards.vue'
+import Cards from './partials/Cards.vue';
 export default {
   name: 'AppMain',
   components: { Filter, Cards }
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
- <filter></filter>
+ <Filter></Filter>
  <cards></cards>
 </template>
 

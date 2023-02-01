@@ -52,7 +52,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-div{
+.container{
   height: 70px;
   img{
      width: 110px;

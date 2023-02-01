@@ -5,6 +5,10 @@ export default {
     buttonStyles: {
       type: Object,
       default: () => ({})
+    },
+    type: {
+      type: String,
+      default: 'button'
     }
   }
 }
