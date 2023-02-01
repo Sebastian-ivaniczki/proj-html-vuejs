@@ -6,7 +6,7 @@ export default {
   components: { BaseButton },
   data() {
     return {
-     
+     store,
       keyword: '',
       location: '',
       category: '', 
@@ -17,11 +17,29 @@ export default {
       
     }
   },
+ computed: {
+  
+ },
   methods: {
     onSubmit() {
      console.log('clicked')
+     this.filteredVehicles
+    },
+    filteredVehicles() {
+      return store.vehicles.filter(vehicle => {
+      return (
+      vehicle.category.includes(this.category) ||
+      vehicle.brand.includes(this.brand) ||
+      vehicle.fuelTyp.includes(this.fuelTyp) ||
+      vehicle.transmission.includes(this.transmision) ||
+      vehicle.status.includes(this.status)
+        );
+      });
     }
-  }
+  },
+  
+    
+  
 }
 
 </script>

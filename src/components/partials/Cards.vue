@@ -7,6 +7,7 @@ export default {
      store
     }
   },
+  
   methods: {
     currentImage: function(img) {
         return new URL(`../../assets/img/${img}.jpg`, import.meta.url).href;
@@ -20,7 +21,7 @@ export default {
 <template>
   <div class="d-flex flex-wrap">
 
-    <div v-for="vehicle in store.vehicles"  class="card p-2" style="width: 20rem;">
+    <div v-for="vehicle in store.vehicles" :key="vehicle.id" class="card p-2" style="width: 20rem;">
      <img :src="currentImage(vehicle.image)" class="card-img-top" :alt="vehicle.brand">
      <div class="card-body">
        <p class="card-text">{{ vehicle.brand }} {{ vehicle.type }}</p>

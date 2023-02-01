@@ -90,5 +90,7 @@ export const store = reactive({
           image: "volkswagen-passat-1280x720-1-400x300",
           price: '32,000'
         },
-      ]
+      ],
+
+      
 });
