@@ -1,10 +1,11 @@
 <script>
 import { store } from './data/store';
+import Cardiponibilites from './partials/Cardiponibilites.vue';
 import Filter from './partials/Filter.vue';
 import Cards from './partials/Cards.vue';
 export default {
   name: 'AppMain',
-  components: { Filter, Cards },
+  components: { Filter, Cards, Cardiponibilites },
   data() {
     return {
       store,
@@ -17,6 +18,7 @@ export default {
 
 <template>
  <Filter></Filter>
+ <Cardiponibilites></Cardiponibilites>
  <cards></cards>
 </template>
 
