@@ -31,16 +31,16 @@ export default {
         </nav>
         <div class="d-flex align-items-center">
           <div class="img-container ms-2">
-            <img src="../assets/img/free-fa-brands-400.svg-fonta.svg" alt="">
+            <img src="../assets/img/padlock.png" alt="">
             <p>My acount</p>
           </div>
           <div class="img-container ms-2">
-            <img src="../assets/img/free-fa-solid-900.svg-fonta.svg" alt="">
+            <img src="../assets/img/add.png" alt="">
             <p>Add car</p>
           </div>
           <i class="fa-solid fa-bars"></i>
           <div class="img-container ms-2">
-            <img src="../assets/img/free-fa-v4deprecations.svg-fonta.svg" alt="">
+            <img src="../assets/img/headphones.png" alt="">
             <p>+1(234)5678910</p>
           </div>
           
@@ -69,7 +69,9 @@ div{
   text-align: center;
   padding: 10px;
   img{
+    width: 55px;
     height: 55px;
+    filter :invert(1)
   }
 }
 p{
