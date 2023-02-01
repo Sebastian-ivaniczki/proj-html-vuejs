@@ -29,7 +29,7 @@
       name: 'Elisabeth',
       surname: 'Rossi',
       description: 'A fast and reliable vehicle selling site. Rare quality website With hundred of model vhicles',
-      img: 'man2'
+      img: 'testimonial4-1'
     },
   ];
 
@@ -83,14 +83,10 @@
       id: "2",
       img: "slider-autocar-6"
     },
+   
     {
       id: "3",
-      img: "news-autocar-1-300x180",
-      
-    },
-    {
-      id: "3",
-      img: "news-autocar-5-600x359",
+      img: "comment-bg-autocar",
       
     },
   ]
