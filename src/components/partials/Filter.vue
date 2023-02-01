@@ -2,13 +2,18 @@
 import BaseButton from './BaseButton.vue';
 export default {
   name: 'Filter',
-  components: { BaseButton }
+  components: { BaseButton },
+  methods: {
+    onSubmit() {
+     console.log('clicked')
+    }
+  }
 }
 
 </script>
 
 <template>
- <form>
+ <form  @submit.prevent="onSubmit">
     <input placeholder="keywords" type="text">
     <input placeholder="location" type="text">
     <select>
