@@ -15,7 +15,9 @@ export default {
   methods:{
     
   },
- 
+  created() {
+  store.filterdVehicles = this.store.vehicles;
+},
 }
 </script>
 

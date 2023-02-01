@@ -23,21 +23,19 @@ export default {
   methods: {
     onSubmit() {
      console.log('clicked')
-     this.filteredVehicles
-    },
-    filteredVehicles() {
-      return store.vehicles.filter(vehicle => {
+     store.filterdVehicles = store.vehicles.filter(vehicle => {
       return (
-      vehicle.category.includes(this.category) ||
-      vehicle.brand.includes(this.brand) ||
-      vehicle.fuelTyp.includes(this.fuelTyp) ||
-      vehicle.transmission.includes(this.transmision) ||
-      vehicle.status.includes(this.status)
+        vehicle.category.toLowerCase().includes(this.category.toLowerCase()) &&
+        vehicle.brand.toLowerCase().includes(this.brand.toLowerCase()) &&
+        vehicle.fuel.toLowerCase().includes(this.fuelTyp.toLowerCase()) &&
+        vehicle.transmission.toLowerCase().includes(this.transmision.toLowerCase()) &&
+        vehicle.status.toLowerCase().includes(this.status.toLowerCase())
         );
       });
-    }
+    },
+    
   },
-  
+
     
   
 }
@@ -56,7 +54,7 @@ export default {
       <option value="hatchback">hatchback</option>
       <option value="sev">SUV</option>
       <option value="sedan">Sedan</option>
-      <option value=""></option>
+      
     </select>
     <!-- brand -->
     <select v-model="brand">
@@ -77,7 +75,7 @@ export default {
     </select>
     <!-- status -->
     <select v-model="status">
-      <option value="avalible">Avalible</option>
+      <option value="Available">Avalible</option>
       <option value="sell">Sell</option>
     </select>
     <base-button :type="submit" :buttonStyles="{backgroundColor: '#000',  color: '#fff' }">Searche</base-button>
@@ -85,5 +83,17 @@ export default {
 </template>
 
 <style scoped lang="scss">
-
+form{
+  display: flex; justify-content: space-around;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+input{
+  height: 43px;
+  width: 130px;
+} 
+select{
+  height: 43px;
+  width: 130px;
+}
 </style>
