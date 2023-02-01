@@ -1,7 +1,9 @@
 <script>
+import BaseButton from './BaseButton.vue';
 import { store } from '../data/store';
 export default {
   name: 'Cards',
+  components: { BaseButton },
   data() {
     return {
      store
@@ -32,6 +34,9 @@ export default {
       </div>
     </div>
      
+  </div>
+  <div class="d-flex justify-content-center my-3">
+    <base-button :buttonStyles="{backgroundColor: '#000',  color: '#fff' }">Show more <i class="fa-solid fa-arrow-right"></i></base-button>
   </div>
 </template>
      
