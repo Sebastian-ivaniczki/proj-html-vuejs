@@ -1,8 +1,22 @@
 <script>
+import { store } from '../data/store.js';
 import BaseButton from './BaseButton.vue';
 export default {
   name: 'Filter',
   components: { BaseButton },
+  data() {
+    return {
+     
+      keyword: '',
+      location: '',
+      category: '', 
+      brand: '',
+      fuelTyp: '',
+      transmision: '', 
+      status: '',
+      
+    }
+  },
   methods: {
     onSubmit() {
      console.log('clicked')
@@ -14,22 +28,39 @@ export default {
 
 <template>
  <form  @submit.prevent="onSubmit">
-    <input placeholder="keywords" type="text">
-    <input placeholder="location" type="text">
-    <select>
-      <option value="">1</option>
+    <!-- keywords -->
+    <input v-model="keyword" placeholder="keywords" type="text">
+    <!-- location -->
+    <input v-model="location" placeholder="location" type="text">
+    <!-- categori -->
+    <select v-model="category">
+      <option value="cabrio">Cabrio</option>
+      <option value="hatchback">hatchback</option>
+      <option value="sev">SUV</option>
+      <option value="sedan">Sedan</option>
+      <option value=""></option>
     </select>
-    <select>
-      <option value="">1</option>
+    <!-- brand -->
+    <select v-model="brand">
+      <option value="bmw">BMW</option>
+      <option value="seat">Seat</option>
+      <option value="wolswagen">Wolswagen</option>
     </select>
-    <select>
-      <option value="">1</option>
+    <!-- fuel type -->
+    <select v-model="fuelTyp">
+      <option value="gasoline">Gasoline</option>
+      <option value="electric">Electric</option>
+      <option value="diesel">Diesel</option>
     </select>
-    <select>
-      <option value="">1</option>
+    <!-- transmision -->
+    <select v-model="transmision">
+      <option value="automatic">Automatic</option>
+      <option value="manual">Manual</option>
     </select>
-    <select>
-      <option value="">1</option>
+    <!-- status -->
+    <select v-model="status">
+      <option value="avalible">Avalible</option>
+      <option value="sell">Sell</option>
     </select>
     <base-button :type="submit" :buttonStyles="{backgroundColor: '#000',  color: '#fff' }">Searche</base-button>
  </form>
