@@ -55,7 +55,67 @@ export default {
         <span><i class="fa-regular fa-copyright"></i> 2022 Autocar - All Rights Reserved</span>
       </div>
     </div>
-    <div class="nav-box nav-right"></div>
+    <div class="nav-box nav-right d-flex">
+      <div class="link-left">
+        <h4><strong>My Account</strong></h4>
+        <ul>
+          <li class="d-flex align-items-center mt-2">
+            <div class="my-border"></div>
+            <a href="#">My Account</a>
+          </li>
+
+          <li class="d-flex align-items-center mt-2">
+            <div class="my-border"></div>
+            <a href="#">Checkout</a>
+          </li>
+
+          <li class="d-flex align-items-center mt-2">
+            <div class="my-border"></div>
+            <a href="#">Cart</a>
+          </li>
+
+          <li class="d-flex align-items-center mt-2">
+            <div class="my-border"></div>
+            <a href="#">Packages</a>
+          </li>
+
+          <li class="d-flex align-items-center mt-2">
+            <div class="my-border"></div>
+            <a href="#">Add Car</a>
+          </li>
+        </ul>
+      </div>
+      <div class="link-right ms-5">
+        <h4><strong>Quick Links</strong></h4>
+        <ul>
+          <li class="d-flex align-items-center mt-2">
+            <div class="my-border"></div>
+            <a href="#">Home</a>
+          </li>
+
+          <li class="d-flex align-items-center mt-2">
+            <div class="my-border"></div>
+            <a href="#">About Us</a>
+          </li>
+
+          <li class="d-flex align-items-center mt-2">
+            <div class="my-border"></div>
+            <a href="#">Blog</a>
+          </li>
+
+          <li class="d-flex align-items-center mt-2">
+            <div class="my-border"></div>
+            <a href="#">Contact</a>
+          </li>
+
+          <li class="d-flex align-items-center mt-2">
+            <div class="my-border"></div>
+            <a href="#">Refund & returns</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
 
   </div>
  </div>
@@ -68,6 +128,7 @@ export default {
   min-height: 400px;
   margin-top: 8rem;
 }
+
 img{
   display: block;
   width: 190px;
@@ -79,6 +140,7 @@ img{
 }
 .nav-box{
   width: calc(100% / 3);
+  padding: 1rem;
 }
 .email-form{
   height: 3rem;
@@ -91,5 +153,26 @@ img{
   width: 100%;
   border-radius: 5px;
   margin-top: 1rem;
+}
+ul{
+  list-style:none ;
+}
+.my-border{
+  width: 10px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.nav-right{
+  h4{
+    margin-left: 26px;
+  }
+}
+li{
+  a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+  }
 }
 </style>
