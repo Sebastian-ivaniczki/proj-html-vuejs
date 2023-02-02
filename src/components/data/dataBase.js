@@ -89,4 +89,35 @@
       img: "comment-bg-autocar",
       
     },
-  ]
+  ];
+
+  export const articles = [
+    {
+      id: "1",
+      type:"autocar",
+      date : "06.07.2022",
+      title: "why is BMW loved?",
+      description: "BMWs have a diferent tline whith their designs and almost[...]",
+    },
+    {
+      id: "2",
+      type:"autocar",
+      date : "06.07.2022",
+      title: "How solid is audi?",
+      description: "According to Euro NCAP data with different test organizations, there[...]",
+    },
+    {
+      id: "3",
+      type:"autocar",
+      date : "06.07.2022",
+      title: "What brand is Skoda?",
+      description: "Skoda is one of the leading automotive manufactures on the[...]",
+    },
+    {
+      id: "4",
+      type:"autocar",
+      date : "06.07.2022",
+      title: "Is the auris diesel?",
+      description: "You will have vehicle that burns less thab[...]",
+    },
+  ];

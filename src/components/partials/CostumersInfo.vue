@@ -49,7 +49,7 @@
 
 <style scoped lang="scss">
     .background{
-        height: 700px;
+        height: 750px;
         width: 100%;
         background-image: url(../../assets/img/comment-bg-autocar.jpg);
         background-position: center;
