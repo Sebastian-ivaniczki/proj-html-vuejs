@@ -48,7 +48,7 @@ export default {
       <h4><strong>Join Our Newsletter</strong></h4>
       <p>Subscribe to be informed about our service and products.</p>
       <form @submit.prevent="onSubmit" class="d-flex flex-column align-items-center">
-        <input type="email" class="email-form ">
+        <input type="email" class="email-form p-2" placeholder="Your Email Adres">
         <button class="footer-button" type="submit">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
       </form>
       <div class="text-end mt-5">
